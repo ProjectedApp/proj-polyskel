@@ -1,23 +1,23 @@
 
   
-# d3c-polyskel  
+# proj-polyskel  
   
-A packaged and maintained version of polyskel for use in D3Companion projects.  
+A packaged and maintained version of polyskel for use in Projected projects.  
   
 ## Credits  
   
-d3c-polyskel is a redistributed and repackaged version of the [polyskel library by Ármin Scipiades (@Bottfy)](https://github.com/Botffy/polyskel), which is a Python implementation of the straight skeleton algorithm as described by Felkel and Obdržálek in their 1998 conference paper "Straight skeleton implementation."  
+proj-polyskel is a redistributed and repackaged version of the [polyskel library by Ármin Scipiades (@Bottfy)](https://github.com/Botffy/polyskel), which is a Python implementation of the straight skeleton algorithm as described by Felkel and Obdržálek in their 1998 conference paper "Straight skeleton implementation."  
   
 ### Key differences from the original: 
 - Packaged for PyPI distribution with modern Python packaging (pyproject.toml)  
 - Removed test files and development artifacts    
 - Added proper dependency management  
-- Maintained for compatibility with D3Companion toolchain  
+- Maintained for compatibility with Projected toolchain  
   
 ## Installation  
   
 ```bash  
-pip install d3c-polyskel
+pip install proj-polyskel
 ```
 
 ## Quick start  
@@ -25,7 +25,7 @@ pip install d3c-polyskel
   ### Basic Example
 
 ```python  
-from d3c_polyskel import skeletonize
+from proj_polyskel import skeletonize
 
 rectangle = [(40, 40), (40, 310), (520, 310), (520, 40)]
 skeleton = skeletonize(polygon=rectangle)
@@ -33,7 +33,7 @@ skeleton = skeletonize(polygon=rectangle)
  ### Polygon with holes
 
 ```python  
-from d3c_polyskel import skeletonize
+from proj_polyskel import skeletonize
 
 rectangle = [(40, 40), (40, 310), (520, 310), (520, 40)]
 holes = [[(100, 100), (200, 100), (200, 150), (100, 150)]]
